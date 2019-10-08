@@ -1,0 +1,37 @@
+{
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "update.mode": "none",
+  "window.zoomLevel": 2,
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.settings.openDefaultKeybindings": true,
+  "workbench.sideBar.location": "left",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.colorCustomizations": {
+    // Examples:
+    //"editor.fontWeight": "Extra Light",
+    // "editor.background": "#111",
+    // "list.focusBackground": "#4733ff52",
+    // "list.focusForeground": "#a280ff",
+  },
+  "editor.rulers": [80, 88, 90],
+  "editor.lineHeight": 22,
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Iosevka",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "python.jediEnabled": false,
+  "workbench.settings.editor": "json",
+  "clang-format.executable": "/usr/bin/clang-format-8",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/bazel-*/**": true
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.colorTheme": "Blowtorch"
+}
