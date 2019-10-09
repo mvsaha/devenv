@@ -58,10 +58,10 @@
     "editorCodeLens.foreground": "#626a73",
     "editorCursor.foreground": "#d900ff",
     "editorError.foreground": "#ff3333",
-    "editorGroup.background": "#0055ff",
-    "editorGroup.border": "#01060e",
-    "editorGroupHeader.noTabsBackground": "#0a0e14",
-    "editorGroupHeader.tabsBackground": "#0a0e14",
+    "editorGroup.background": "#161616",
+    "editorGroup.border": "#74002c",
+    "editorGroupHeader.noTabsBackground": "#35154b",
+    "editorGroupHeader.tabsBackground": "#14082e",
     "editorGroupHeader.tabsBorder": "#0a0e14",
     "editorGutter.addedBackground": "#91b36299",
     "editorGutter.deletedBackground": "#d96c7599",
@@ -494,6 +494,26 @@
       }
     },
     {
+      "name": "Docstrings",
+      "scope": [
+        "string.quoted.docstring",
+        "string.quoted.docstring.multi.python"
+      ],
+      "settings": {
+        "foreground": "#445b80"
+      }
+    },
+    {
+      "name": "String Punc",
+      "scope": [
+        "punctuation.definition.string.begin.python",
+        "punctuation.definition.string.end.python"
+      ],
+      "settings": {
+        "foreground": "#3568a3"
+      }
+    },
+    {
       "name": "Punctuation",
       "scope": [
         "punctuation",
@@ -548,7 +568,11 @@
         "storage.modifier.inline",
         "storage.type.template",
         "storage.type.namespace",
-        "meta.head.function.definition"
+        "storage.type.class",
+        "meta.head.function.definition",
+        "punctuation.definition.decorator",
+        "meta.function.decorator.python",
+        "keyword.operator.logical.python"
       ],
       "settings": {
         "foreground": "#df5170",
@@ -565,7 +589,7 @@
         "punctuation.separator.scope-resolution"
       ],
       "settings": {
-        "foreground": "#626262",
+        "foreground": "#696868",
         "fontStyle": "bold"
       }
     },
@@ -599,7 +623,8 @@
       "scope": [
         "entity.name.function",
         "meta.require",
-        "support.function.any-method"
+        "support.function.any-method",
+        "meta.function-call.generic.python"
       ],
       "settings": {
         "foreground": "#c7af6f"
@@ -609,7 +634,8 @@
       "name": "Function Definitions",
       "scope": [
         "entity.name.function.definition",
-        "entity.name.function.definition.templated"
+        "entity.name.function.definition.templated",
+        "entity.name.function.python"
       ],
       "settings": {
         "foreground": "#c7af6f",
@@ -626,6 +652,18 @@
         "foreground": "#c7af6f"
       }
     },
+    {
+      "name": "Special Functions",
+      "scope": [
+        "support.function.builtin",
+        "support.function.magic.python"
+        //"support.type"
+        //"meta.function-call.python"
+      ],
+      "settings": {
+        "foreground": "#df5170"
+      }
+    },
     // ============================TYPES================================
     {
       "name": "Classes",
@@ -633,7 +671,8 @@
         "support.class",
         "entity.name.class",
         "entity.name.type",
-        "entity.name.type.class.generic"
+        "entity.name.type.class.generic",
+        "meta.function.parameters.python"
       ],
       "settings": {
         "foreground": "#c7642a",
